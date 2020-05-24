@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="search_page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.search">
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="0.0" prefWidth="41.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="450.0" minWidth="0.0" prefWidth="82.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1266.0" minWidth="10.0" prefWidth="499.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="968.0" minWidth="7.0" prefWidth="68.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="968.0" minWidth="10.0" prefWidth="266.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="100.0" minHeight="0.0" prefHeight="85.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="247.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="472.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="69.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane GridPane.columnIndex="1">
+               <children>
+                  <Label text="Search" textFill="#1f2772" underline="true" AnchorPane.bottomAnchor="0.0">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="display" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextArea>
+            <TextField fx:id="matter_no" maxWidth="-Infinity" minWidth="-Infinity" promptText="matter no." style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#func_home" style="-fx-background-radius: 20;" text="Home" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="search" mnemonicParsing="false" onAction="#func_search" style="-fx-background-radius: 20;" text="Search" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="370.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="matter_type" mnemonicParsing="false" text="Matter Type" GridPane.columnIndex="2" GridPane.rowIndex="1">
+              <items>
+                 <MenuItem fx:id="SA" mnemonicParsing="false" onAction="#getSA" text="S.A." />
+                <MenuItem fx:id="WP" mnemonicParsing="false" onAction="#getWP" text="W.P." />
+                <MenuItem fx:id="CA" mnemonicParsing="false" onAction="#getCA" text="C.A." />           
+                <MenuItem fx:id="CRA" mnemonicParsing="false" onAction="#getCRA" text="C.R.A." />
+                <MenuItem fx:id="CrApp" mnemonicParsing="false" onAction="#getCrApp" text="Cr.App." />
+                <MenuItem fx:id="AO" mnemonicParsing="false" onAction="#getAO" text="A.O." />
+                <MenuItem fx:id="CP" mnemonicParsing="false" onAction="#getCP" text="C.P." />
+                <MenuItem fx:id="FA" mnemonicParsing="false" onAction="#getFA" text="F.A." />
+                <MenuItem fx:id="MCA" mnemonicParsing="false" onAction="#getMCA" text="M.C.A." />
+                <MenuItem fx:id="CrAppl" mnemonicParsing="false" onAction="#getCrAppl" text="Cr.Appl." />
+                <MenuItem fx:id="CrWP" mnemonicParsing="false" onAction="#getCrWP" text="Cr.W.P." />
+                <MenuItem fx:id="PIL" mnemonicParsing="false" onAction="#getPIL" text="P.I.L." />
+                <MenuItem fx:id="ArbPet" mnemonicParsing="false" onAction="#getArbPet" text="Arb.Pet" />     
+              </items>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>

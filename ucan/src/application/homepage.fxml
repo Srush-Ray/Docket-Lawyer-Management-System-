@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="home_page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homepageController">
+   <center>
+      <GridPane prefHeight="327.0" prefWidth="337.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="8.0" prefWidth="69.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="77.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="89.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="628.0" minWidth="0.0" prefWidth="222.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="155.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="142.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="436.0" minWidth="10.0" prefWidth="72.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="100.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="270.0" minHeight="6.0" prefHeight="42.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="292.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="278.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="270.0" minHeight="10.0" prefHeight="192.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="137.0" text="Name" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user_name" minWidth="-Infinity" prefHeight="26.0" prefWidth="194.0" promptText="Owner Name" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label minWidth="-Infinity" text="Password" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" minWidth="-Infinity" prefHeight="26.0" prefWidth="198.0" promptText="Owner Password" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="signOwner" minWidth="-Infinity" mnemonicParsing="false" onAction="#sign_in" style="-fx-background-radius: 20;" text="Sign In" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#new_acc" prefHeight="29.0" prefWidth="152.0" style="-fx-background-radius: 20;" text="Create Account" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="108.0" text="Name" underline="true" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user_name1" minWidth="-Infinity" prefHeight="26.0" prefWidth="194.0" promptText="User Name" style="-fx-background-radius: 15;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label minWidth="-Infinity" text="Password" underline="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password1" minWidth="-Infinity" prefHeight="26.0" prefWidth="198.0" promptText="User Password" style="-fx-background-radius: 15;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Button fx:id="signUser" minWidth="-Infinity" mnemonicParsing="false" onAction="#sign_in_user" style="-fx-background-radius: 20;" text="Sign In" GridPane.columnIndex="8" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#979797" height="568.0" stroke="BLACK" strokeType="INSIDE" width="5.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="137.0" text="Owner" underline="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <Label maxWidth="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="137.0" text="User" underline="true" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <Label minWidth="-Infinity" prefHeight="31.0" prefWidth="140.0" text="Sign Up" underline="true" GridPane.columnIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+   <left>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="D" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <StackPane.margin>
+                  <Insets bottom="500.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="O" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <StackPane.margin>
+                  <Insets bottom="350.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="C" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <StackPane.margin>
+                  <Insets bottom="200.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="K" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="69.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <StackPane.margin>
+                  <Insets bottom="50.0" />
+               </StackPane.margin></Label>
+            <Label text="E" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <StackPane.margin>
+                  <Insets top="100.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="T" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="70.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <StackPane.margin>
+                  <Insets top="250.0" />
+               </StackPane.margin>
+            </Label>
+         </children></StackPane>
+   </left>
+   <top>
+      <StackPane BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

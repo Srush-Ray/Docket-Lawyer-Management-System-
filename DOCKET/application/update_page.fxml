@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="update_page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.updateController">
+   <top>
+      <GridPane style="-fx-background-radius: 20;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="106.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.0" minWidth="10.0" prefWidth="149.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="631.0" minWidth="10.0" prefWidth="306.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="407.0" minWidth="10.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="386.0" minWidth="10.0" prefWidth="91.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.0" minWidth="10.0" prefWidth="130.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.0" minWidth="10.0" prefWidth="377.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="143.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="148.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane GridPane.columnIndex="1">
+               <children>
+                  <Label minWidth="-Infinity" text="Update  file" textFill="#121f57" underline="true" AnchorPane.bottomAnchor="0.0">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label text="Appeliant" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font></Label>
+            <Label text="Petitioner" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="45.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Applicant" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="45.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Respondent" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font></Label>
+            <Label text="Opponent" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="45.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Filed in Court" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font></Label>
+            <DatePicker fx:id="filed_date" editable="false" promptText="Update Date" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin></DatePicker>
+            <TextField fx:id="matter_no" promptText="Matter No." style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="opponent" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="314.0" promptText="Opponent Name" style="-fx-background-radius: 15;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="applicant" promptText="Applicant Name" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <Label text="Fees" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font></Label>
+            <Label text="Fees Amount " underline="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font></Label>
+            <TextField fx:id="fees" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="fees_reci" editable="false" style="-fx-background-radius: 15;" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <Label text="V/S" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="19.0" />
+               </font></Label>
+            <Label text="Notes" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font></Label>
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#func_cancel" style="-fx-background-radius: 20;" text="Cancel" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="17.0" />
+               </font></Button>
+            <Button fx:id="update" mnemonicParsing="false" onAction="#func_update" style="-fx-background-radius: 20;" text="Update" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font name="DejaVu Serif Bold Italic" size="17.0" />
+               </font></Button>
+            <Label text="Next important" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font></Label>
+            <Label text="Date" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="DejaVu Serif Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="next_date" editable="false" promptText="Update Date" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin></DatePicker>
+            <TextField fx:id="notes" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="fild_date_update" editable="false" maxWidth="-Infinity" minWidth="-Infinity" style="-fx-background-radius: 15;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="imp_date_update" editable="false" maxWidth="-Infinity" minWidth="-Infinity" style="-fx-background-radius: 15;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label text="Add to recieved" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font></Label>
+            <TextField fx:id="add_money" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="322.0" style="-fx-background-radius: 15;" text="0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></TextField>
+            <Button fx:id="detil" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#func_detail" style="-fx-background-radius: 20;" text="Get Details" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <MenuButton fx:id="matter_type" mnemonicParsing="false" text="Matter Type" GridPane.columnIndex="2" GridPane.rowIndex="1">
+              <items>
+               <MenuItem fx:id="SA" mnemonicParsing="false" onAction="#getSA" text="S.A." />
+                <MenuItem fx:id="WP" mnemonicParsing="false" onAction="#getWP" text="W.P." />
+                <MenuItem fx:id="CA" mnemonicParsing="false" onAction="#getCA" text="C.A." />           
+                <MenuItem fx:id="CRA" mnemonicParsing="false" onAction="#getCRA" text="C.R.A." />
+                <MenuItem fx:id="CrApp" mnemonicParsing="false" onAction="#getCrApp" text="Cr.App." />
+                <MenuItem fx:id="AO" mnemonicParsing="false" onAction="#getAO" text="A.O." />
+                <MenuItem fx:id="CP" mnemonicParsing="false" onAction="#getCP" text="C.P." />
+                <MenuItem fx:id="FA" mnemonicParsing="false" onAction="#getFA" text="F.A." />
+                <MenuItem fx:id="MCA" mnemonicParsing="false" onAction="#getMCA" text="M.C.A." />
+                <MenuItem fx:id="CrAppl" mnemonicParsing="false" onAction="#getCrAppl" text="Cr.Appl." />
+                <MenuItem fx:id="CrWP" mnemonicParsing="false" onAction="#getCrWP" text="Cr.W.P." />
+                <MenuItem fx:id="PIL" mnemonicParsing="false" onAction="#getPIL" text="P.I.L." />
+                <MenuItem fx:id="ArbPet" mnemonicParsing="false" onAction="#getArbPet" text="Arb.Pet" />     
+              </items>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </MenuButton>
+            <Label text="Fees" underline="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="45.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>
